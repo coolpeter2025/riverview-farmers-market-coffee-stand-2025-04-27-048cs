@@ -1,49 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riverview Farmers Market Coffee Stand</title>
     <meta name="description" content="Locally sourced coffee with Riverview community spirit. Organic drinks, reusable cups, and seasonal offerings.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
-    <header x-data="{ isOpen: false }" class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-800">
+    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold tracking-tight text-white hover:text-amber-400 transition duration-300">
+                <a href="https://coolpeter2025.github.io/riverview-farmers-market-coffee-stand-2025-04-27-048cs" class="text-2xl font-bold tracking-tight text-white hover:text-amber-400 transition duration-300">
                     Delightful Bean
                 </a>
-                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
-                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                        <path x-show="!isOpen" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
-                        <path x-show="isOpen" d="M6.7 6.7l10.6 10.6m0-10.6L6.7 17.3"></path>
-                    </svg>
+                <button class="mobile-menu-button md:hidden focus:outline-none" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#features" class="text-gray-300 hover:text-white transition duration-300">Features</a>
-                    <a href="#benefits" class="text-gray-300 hover:text-white transition duration-300">Benefits</a>
-                    <a href="#faq" class="text-gray-300 hover:text-white transition duration-300">FAQ</a>
-                    <a href="#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a>
+                    <a href="#features" class="text-gray-300 hover:text-white hover:scale-105 transition duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white hover:scale-105 transition duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white hover:scale-105 transition duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white hover:scale-105 transition duration-300">About Us</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white hover:scale-105 transition duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white hover:scale-105 transition duration-300">Contact</a>
                 </div>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <a href="#features" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4 transition duration-300">Features</a>
+                <a href="#benefits" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4 transition duration-300">Benefits</a>
+                <a href="#testimonials" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4 transition duration-300">Testimonials</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4 transition duration-300">About Us</a>
+                <a href="#faq" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4 transition duration-300">FAQ</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4 transition duration-300">Contact</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="relative min-h-screen flex items-center justify-center py-24 px-6">
-            <div class="absolute inset-0 bg-gradient-to-br from-amber-900/20 to-gray-900 z-0"></div>
+        <section class="relative min-h-screen flex items-center justify-center py-24 px-6" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-gradient-to-br from-amber-900/80 to-gray-900/90 z-0"></div>
             <div class="container mx-auto relative z-10">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-amber-400 to-yellow-200 bg-clip-text text-transparent">
-                        Riverview Farmers Market Coffee Stand
+                        Artisanal Coffee Experience at Riverview
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
-                        Locally sourced coffee with Riverview community spirit
+                        Discover premium, locally-roasted coffee served with community spirit. Experience the perfect blend of tradition and innovation in every cup.
                     </p>
-                    <a href="https://www.delightfulbean.com/" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold px-8 py-4 rounded-lg transform hover:scale-105 transition duration-300">
-                        Visit Our Store
+                    <a href="https://www.delightfulbean.com/" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold px-8 py-4 rounded-lg transform hover:scale-105 transition duration-300 hover:shadow-lg">
+                        Start Your Coffee Journey
                     </a>
                 </div>
             </div>
@@ -51,96 +67,216 @@
 
         <section id="features" class="py-24 px-6 bg-gray-800">
             <div class="container mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-amber-400">Our Signature Offerings</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-amber-400">Exceptional Coffee Experience</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="bg-gray-900 rounded-xl p-8 hover:transform hover:scale-105 transition duration-300 shadow-xl">
+                    <div class="bg-gray-900 rounded-xl p-8 hover:transform hover:scale-105 transition duration-300 shadow-xl hover:shadow-2xl">
                         <div class="w-16 h-16 bg-amber-500 rounded-lg mb-6 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-gray-900" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
-                            </svg>
+                            <i class="fas fa-coffee text-2xl text-gray-900"></i>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Organic Drinks</h3>
-                        <p class="text-gray-400">Carefully selected organic beans, expertly roasted and brewed to perfection.</p>
+                        <h3 class="text-xl font-semibold mb-4">Artisanal Brewing</h3>
+                        <p class="text-gray-400">Each cup is meticulously crafted using small-batch roasted beans and precise brewing techniques for optimal flavor extraction.</p>
                     </div>
-                    <!-- Similar cards for other features -->
+                    <div class="bg-gray-900 rounded-xl p-8 hover:transform hover:scale-105 transition duration-300 shadow-xl hover:shadow-2xl">
+                        <div class="w-16 h-16 bg-amber-500 rounded-lg mb-6 flex items-center justify-center">
+                            <i class="fas fa-leaf text-2xl text-gray-900"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Organic Selection</h3>
+                        <p class="text-gray-400">Sustainably sourced, certified organic beans from premium growing regions, ensuring both quality and environmental responsibility.</p>
+                    </div>
+                    <div class="bg-gray-900 rounded-xl p-8 hover:transform hover:scale-105 transition duration-300 shadow-xl hover:shadow-2xl">
+                        <div class="w-16 h-16 bg-amber-500 rounded-lg mb-6 flex items-center justify-center">
+                            <i class="fas fa-mug-hot text-2xl text-gray-900"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Seasonal Specials</h3>
+                        <p class="text-gray-400">Rotating selection of seasonal beverages featuring local ingredients and innovative flavor combinations.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="benefits" class="py-24 px-6">
             <div class="container mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-amber-400">Community Benefits</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-amber-400">Community Impact</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-                    <div class="flex flex-col items-start">
-                        <h3 class="text-2xl font-semibold mb-6">Engage Community</h3>
-                        <p class="text-gray-400 leading-relaxed">Creating a vibrant meeting place for our local community to connect and thrive.</p>
+                    <div class="flex flex-col items-start hover:transform hover:scale-105 transition duration-300">
+                        <h3 class="text-2xl font-semibold mb-6">Local Economic Growth</h3>
+                        <p class="text-gray-400 leading-relaxed">Supporting local farmers and businesses while creating job opportunities within our community. Every purchase contributes to sustainable local development.</p>
                     </div>
-                    <div class="flex flex-col items-start">
-                        <h3 class="text-2xl font-semibold mb-6">Stay Sustainable</h3>
-                        <p class="text-gray-400 leading-relaxed">Committed to environmental responsibility through reusable cups and sustainable practices.</p>
+                    <div class="flex flex-col items-start hover:transform hover:scale-105 transition duration-300">
+                        <h3 class="text-2xl font-semibold mb-6">Environmental Leadership</h3>
+                        <p class="text-gray-400 leading-relaxed">Pioneering sustainable practices with our reusable cup program, composting initiatives, and zero-waste packaging solutions.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="faq" class="py-24 px-6 bg-gray-800">
-            <div class="container mx-auto max-w-4xl">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-amber-400">Frequently Asked Questions</h2>
-                <div class="space-y-8">
-                    <div class="bg-gray-900 rounded-lg p-6">
-                        <h3 class="text-xl font-semibold mb-4">What are your opening hours?</h3>
-                        <p class="text-gray-400">We're open during regular Farmers Market hours, from sunrise to sunset.</p>
+        <section id="testimonials" class="py-24 px-6 bg-gray-800">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-amber-400">Customer Stories</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-900 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-amber-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-400 mb-4">"The artisanal brewing techniques they use make every cup exceptional. I've saved countless hours by grabbing my morning coffee here instead of making it at home."</p>
+                        <p class="font-semibold">Sarah Johnson</p>
+                        <p class="text-sm text-gray-500">Local Business Owner</p>
                     </div>
-                    <!-- Additional FAQ items -->
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="py-24 px-6">
-            <div class="container mx-auto max-w-4xl text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-amber-400">Get in Touch</h2>
-                <p class="text-xl text-gray-400 mb-12">Have questions? We'd love to hear from you.</p>
-                <a href="mailto:info@delightfulbean.com" class="text-2xl text-amber-400 hover:text-amber-300 transition duration-300">
-                    info@delightfulbean.com
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-gray-800 py-16 px-6">
-        <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Delightful Bean</h3>
-                    <p class="text-gray-400">Bringing quality coffee to our community.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#features" class="text-gray-400 hover:text-white transition duration-300">Features</a></li>
-                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition duration-300">Benefits</a></li>
-                        <li><a href="#faq" class="text-gray-400 hover:text-white transition duration-300">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Contact</h3>
-                    <p class="text-gray-400">info@delightfulbean.com</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                            <span class="sr-only">Facebook</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        </a>
-                        <!-- Additional social media icons -->
+                    <div class="bg-gray-900 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-amber-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-400 mb-4">"Their commitment to sustainability aligns perfectly with my values. The reusable cup program has helped me reduce my environmental impact while enjoying premium coffee."</p>
+                        <p class="font-semibold">Michael Chen</p>
+                        <p class="text-sm text-gray-500">Environmental Consultant</p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-amber-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-400 mb-4">"The seasonal specials are always creative and delicious. It's become my weekend tradition to try their latest offerings."</p>
+                        <p class="font-semibold">Emily Rodriguez</p>
+                        <p class="text-sm text-gray-500">Food Blogger</p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-amber-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-400 mb-4">"As a coffee enthusiast, I appreciate their attention to detail in every aspect of brewing. The staff's knowledge about their beans is impressive."</p>
+                        <p class="font-semibold">David Thompson</p>
+                        <p class="text-sm text-gray-500">Coffee Connoisseur</p>
                     </div>
                 </div>
+            </section>
+
+            <section id="about" class="py-24 px-6">
+                <div class="container mx-auto max-w-4xl">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-amber-400">Our Story</h2>
+                    <div class="space-y-8 text-gray-400">
+                        <p class="leading-relaxed">
+                            Founded in 2020, Delightful Bean began as a passion project between two friends who shared a vision of bringing premium coffee culture to the Riverview Farmers Market. What started as a small cart has grown into a beloved community fixture, serving hundreds of satisfied customers daily.
+                        </p>
+                        <p class="leading-relaxed">
+                            Our mission is to create exceptional coffee experiences while fostering community connections and environmental sustainability. We believe in the power of quality coffee to bring people together and make every day a little more special. Our core values of authenticity, sustainability, and community guide everything we do.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq" class="py-24 px-6 bg-gray-800">
+                <div class="container mx-auto max-w-4xl">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-amber-400">Common Questions</h2>
+                    <div class="space-y-8">
+                        <div class="bg-gray-900 rounded-lg p-6 hover:shadow-xl transition duration-300">
+                            <h3 class="text-xl font-semibold mb-4">What are your operating hours?</h3>
+                            <p class="text-gray-400">We're open Tuesday through Sunday, 7am to 2pm, following the Farmers Market schedule. Closed on Mondays.</p>
+                        </div>
+                        <div class="bg-gray-900 rounded-lg p-6 hover:shadow-xl transition duration-300">
+                            <h3 class="text-xl font-semibold mb-4">Do you offer non-dairy alternatives?</h3>
+                            <p class="text-gray-400">Yes! We provide a variety of plant-based options including oat, almond, and soy milk at no extra charge.</p>
+                        </div>
+                        <div class="bg-gray-900 rounded-lg p-6 hover:shadow-xl transition duration-300">
+                            <h3 class="text-xl font-semibold mb-4">How does your reusable cup program work?</h3>
+                            <p class="text-gray-400">Bring your own clean cup and receive a $0.50 discount on any drink. We also sell branded reusable cups that come with your first drink free.</p>
+                        </div>
+                        <div class="bg-gray-900 rounded-lg p-6 hover:shadow-xl transition duration-300">
+                            <h3 class="text-xl font-semibold mb-4">Where do you source your beans?</h3>
+                            <p class="text-gray-400">We partner with local roasters who source directly from small-scale farmers in Ethiopia, Colombia, and Guatemala.</p>
+                        </div>
+                        <div class="bg-gray-900 rounded-lg p-6 hover:shadow-xl transition duration-300">
+                            <h3 class="text-xl font-semibold mb-4">Do you offer wholesale or catering?</h3>
+                            <p class="text-gray-400">Yes, we provide catering services for events and wholesale options for local businesses. Contact us for custom packages.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="py-24 px-6">
+                <div class="container mx-auto max-w-4xl text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-amber-400">Connect With Us</h2>
+                    <p class="text-xl text-gray-400 mb-12">We'd love to hear from you! Reach out for questions, suggestions, or partnership opportunities.</p>
+                    <a href="mailto:info@delightfulbean.com" class="text-2xl text-amber-400 hover:text-amber-300 transition duration-300 hover:scale-105 inline-block">
+                        info@delightfulbean.com
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 py-16 px-6">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Delightful Bean</h3>
+                        <p class="text-gray-400">Elevating your coffee experience, one cup at a time.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#features" class="text-gray-400 hover:text-white transition duration-300">Features</a></li>
+                            <li><a href="#benefits" class="text-gray-400 hover:text-white transition duration-300">Benefits</a></li>
+                            <li><a href="#testimonials" class="text-gray-400 hover:text-white transition duration-300">Testimonials</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                            <li><a href="#faq" class="text-gray-400 hover:text-white transition duration-300">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Legal</h3>
+                        <ul class="space-y-2">
+                            <li><a href="https://coolpeter2025.github.io/riverview-farmers-market-coffee-stand-2025-04-27-048cs/privacy.html" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                            <li><a href="https://coolpeter2025.github.io/riverview-farmers-market-coffee-stand-2025-04-27-048cs/terms.html" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a></li>
+                            <li><a href="https://coolpeter2025.github.io/riverview-farmers-market-coffee-stand-2025-04-27-048cs/blog.html" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Connect</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300 hover:scale-110">
+                                <i class="fab fa-facebook text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300 hover:scale-110">
+                                <i class="fab fa-instagram text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300 hover:scale-110">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                    <p>&copy; 2024 Delightful Bean. All rights reserved.</p>
+                </div>
             </div>
-            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Delightful Bean. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+                const mobileMenu = document.querySelector('header nav .mobile-menu');
+                
+                if (mobileMenuButton && mobileMenu) {
+                    mobileMenuButton.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.toggle('fa-bars');
+                            icon.classList.toggle('fa-times');
+                        }
+                    });
+
+                    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                    mobileMenuLinks.forEach(link => {
+                        link.addEventListener('click', () => {
+                            mobileMenu.classList.add('hidden');
+                            const icon = mobileMenuButton.querySelector('i');
+                            if (icon) {
+                                icon.classList.remove('fa-times');
+                                icon.classList.add('fa-bars');
+                            }
+                        });
+                    });
+                }
+            });
+        </script>
+    </body>
 </body>
 </html>
